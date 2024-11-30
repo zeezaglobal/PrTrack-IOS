@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WorkoutListCollectionViewCell" customModule="FitCanada" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="278" height="176"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="278" height="176"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2vp-mI-wnU">
+                        <rect key="frame" x="0.0" y="0.0" width="278" height="176"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chestWorkOutImage" translatesAutoresizingMaskIntoConstraints="NO" id="kiu-nZ-wyg">
+                                <rect key="frame" x="0.0" y="0.0" width="278" height="176"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chest Day" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dl2-F9-bRW">
+                                <rect key="frame" x="17" y="41" width="244" height="33.666666666666657"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="28"/>
+                                <color key="textColor" name="WhiteTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kiu-nZ-wyg" secondAttribute="trailing" id="0qD-Kx-eue"/>
+                            <constraint firstItem="dl2-F9-bRW" firstAttribute="top" secondItem="2vp-mI-wnU" secondAttribute="top" constant="41" id="1YM-Py-Ldd"/>
+                            <constraint firstItem="kiu-nZ-wyg" firstAttribute="leading" secondItem="2vp-mI-wnU" secondAttribute="leading" id="Cnr-Ot-og8"/>
+                            <constraint firstAttribute="bottom" secondItem="kiu-nZ-wyg" secondAttribute="bottom" id="OaQ-Ib-C0a"/>
+                            <constraint firstAttribute="trailing" secondItem="dl2-F9-bRW" secondAttribute="trailing" constant="17" id="UYF-HS-dCW"/>
+                            <constraint firstItem="dl2-F9-bRW" firstAttribute="leading" secondItem="2vp-mI-wnU" secondAttribute="leading" constant="17" id="Um1-02-TvU"/>
+                            <constraint firstItem="kiu-nZ-wyg" firstAttribute="top" secondItem="2vp-mI-wnU" secondAttribute="top" id="m77-AA-UqL"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="2vp-mI-wnU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5pB-eN-MWi"/>
+                <constraint firstAttribute="bottom" secondItem="2vp-mI-wnU" secondAttribute="bottom" id="GIz-a2-4DV"/>
+                <constraint firstItem="2vp-mI-wnU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cZB-5G-kIw"/>
+                <constraint firstAttribute="trailing" secondItem="2vp-mI-wnU" secondAttribute="trailing" id="xBc-MR-nt1"/>
+            </constraints>
+            <size key="customSize" width="278" height="176"/>
+            <point key="canvasLocation" x="184.73282442748092" y="64.08450704225352"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="chestWorkOutImage" width="300" height="200"/>
+        <namedColor name="WhiteTextColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
