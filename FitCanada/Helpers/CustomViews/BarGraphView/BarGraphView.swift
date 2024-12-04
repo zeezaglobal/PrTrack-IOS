@@ -9,9 +9,9 @@ import Foundation
 import UIKit
 
 class BarGraphView: UIView {
-    var data: [CGFloat] = [10, 40, 50, 60, 55, 70, 65] // Example data
-    var labels: [String] = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
-    var targetWeight: CGFloat = 60 // Example target weight
+    var data: [CGFloat] = [] // Example data
+    var labels: [String] = []
+    var targetWeight: CGFloat = 0 // Example target weight
     let yAxisStep: CGFloat = 7 // Y-axis step size for labels
     
     override func draw(_ rect: CGRect) {
@@ -33,6 +33,7 @@ class BarGraphView: UIView {
         let barSpacing = totalSpacing / CGFloat(data.count + 1)
         
         // Clear existing subviews
+        layer.sublayers?.forEach { $0.removeFromSuperlayer() }
         subviews.forEach { $0.removeFromSuperview() }
         
         // Draw Y-axis labels

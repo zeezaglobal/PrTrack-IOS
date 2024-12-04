@@ -316,7 +316,7 @@
                                             </view>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TpN-84-ebQ">
                                                 <rect key="frame" x="0.0" y="410" width="393" height="349"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" name="BlackTextColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="349" id="M3F-M1-Qej"/>
                                                 </constraints>
@@ -358,6 +358,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bodyPartNameLabel" destination="XFe-Ac-5y6" id="phS-Xv-nbd"/>
                         <outlet property="tableView" destination="TpN-84-ebQ" id="LVy-xv-iBM"/>
                         <outlet property="tableViewHeightConstraint" destination="M3F-M1-Qej" id="cSp-0X-8jz"/>
                     </connections>

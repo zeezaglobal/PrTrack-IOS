@@ -128,6 +128,8 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="graphContainerView" destination="HRQ-84-2RL" id="yTz-OD-lAG"/>
+                <outlet property="lastLiftLabel" destination="3VG-JE-KaD" id="uYv-cl-EXN"/>
+                <outlet property="workOutNameLabel" destination="7UI-Mw-buN" id="atY-Yh-Fww"/>
             </connections>
             <point key="canvasLocation" x="-63.358778625954194" y="91.197183098591552"/>
         </tableViewCell>
